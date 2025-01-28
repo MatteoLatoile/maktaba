@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.block{
+    display: block;
+}
+body {
+    font-family: "Roboto", serif;
+    background-color: black;
+}
+.centrer{
+    margin-top: 150px;
+ justify-content: center;
+
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Roboto", serif;
+}
+
+li {
+    list-style: none;
+}
+
+.containerPage {
+    max-width: 1000px;
+    margin: auto;
+    width: 100%
+}
+
+.width50 {
+    width: 50%;
+
+}
+
+.alignItem {
+    align-items: center;
+}
+
+.width30 {
+    width: 30%;
+}
+
+/*header*/
+
+
+header {
+    padding: 0px 20px;
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+
+}
+
+i {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 20px;
+
+}
+
+.btnHeader {
+    color: gray;
+}
+
+.logoHeader {
+    width: 100px;
+    margin-left: 90px;
+}
+
+.burgerPasOuf {
+    width: 30px;
+    filter: invert(100%);
+}
+
+/*Sidenav*/
+.sideNav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #000000;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+}
+
+.angle {
+    float: right;
+    font-weight: 200;
+    color: #b1b1b1;
+}
+
+.sideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #949494;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 20px;
+
+}
+
+
+.sideNav a:hover {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sideNav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Active sidebar*/
+.sideNav.active {
+    left: 0px;
+}
+
+/*
+  .sideNav.close{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+    */
+.subMenu {
+    display: none;
+}
+
+.hoverMe:hover .subMenu {
+    position: absolute;
+    display: block;
+    margin-top: -60px;
+    margin-left: 250px;
+    background-color: #000000;
+    width: 200px;
+}
+h2 {
+    color: white;
+    font-size: 150px;
+    text-align: center;
+    margin-top: 150px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    letter-spacing: 20px;
+}
+h3 {
+    color: #fff;
+    font-size: 40px;
+    font-style: italic;
+    margin-top: 150px;
+}
+h4{
+    color: #fff;
+    font-style: italic;
+    font-size: 30px;
+}
+/*div login*/
+.form{
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 30px;
+
+}
+.btnLogin{
+    background-color: #ececec;
+    color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 20px;
+
+}
+.form p {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 14px;
+}
+.incrivez{
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+}
+.form input{
+    width: 240px;
+    height: 36px;
+    background-color: #181818;
+    border-bottom: 1px solid #ffffff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
