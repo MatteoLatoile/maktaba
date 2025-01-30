@@ -88,6 +88,11 @@ i {
 .burgerPasOuf {
     width: 30px;
     filter: invert(100%);
+    cursor: pointer;
+}
+.burgerPasOuf:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 .searchBar{
     position: relative;
