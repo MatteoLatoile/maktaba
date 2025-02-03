@@ -232,3 +232,15 @@ h4{
     margin-top: 20px;
     margin-bottom: 4px;
 }
+.oeil{
+    position: absolute;
+    top: 302px;
+    right: 510px;
+    z-index: 2;
+    font-size: 16px;
+    cursor: pointer;
+}
+.oeil.actives::before{
+    content: '\f070';
+    color: #aeaeae;
+}

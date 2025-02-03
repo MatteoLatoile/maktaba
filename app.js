@@ -31,3 +31,4 @@ cancelBtn.onclick = () =>{
     searchBtn.classList.remove("active");
     cancelBtn.classList.remove("active");
 }
+

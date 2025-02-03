@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,15 @@
     <link rel="stylesheet" href="inscription.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
 </head>
+
 <body>
     <header class="flex alignItem spaceBetween">
         <img src="assets/6499731.png" alt="" id="openBtn" class="burgerPasOuf">
         <a href="index.html"><img src="assets/logo maison sousou.png" class="logoHeader width30" alt=""></a>
-      
-        
-    <!-- sidebar -->
-    
+
+
+        <!-- sidebar -->
+
         <div id="mySideNav" class="sideNav">
             <a href="#" id="closeBtn">x</a>
             <ul>
@@ -34,7 +36,7 @@
             </ul>
         </div>
     </header>
-     
+
     <!-- formulaire de connexion -->
     <section>
         <div class="flex centrer">
@@ -43,12 +45,26 @@
                 <input type="name" name="name" placeholder="Prénom">
                 <input type="lastname" name="" placeholder="Nom de famille">
                 <input type="email" name="email" placeholder="entrez votre e-mail ici...">
-                <input type="password" name="" placeholder="créez votre mot de passe...">
+                <div>
+                    <input id="password" type="password" name="" placeholder="créez votre mot de passe...">
+                    <i class="fas fa-eye oeil"></i>
+                    
+                </div>
+                <div id="message">
+                    <h5>Le mot de passe doit contenir les éléments suivants</h5>
+                    <p id="minuscule" class="invalid">Une lettre minuscule</p>
+                    <p id="majuscule" class="invalid">Une lettre majuscule</p>
+                    <p id="chiffre" class="invalid">Un chiffre</p>
+                    <p id="lenght" class="invalid">8 charactère minimum</p>
+                </div>
 
                 <a href="" class="btnLogin">créer</a>
             </div>
+            
         </div>
+        
     </section>
-    <script src="app.js" defer></script>
+    <script src="inscription.js" defer></script>
 </body>
+
 </html>

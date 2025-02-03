@@ -31,7 +31,9 @@ body {
 .spaceBetween {
     justify-content: space-between;
 }
-
+.column{
+    flex-direction: column;
+}
 a {
     text-decoration: none;
     font-family: "Roboto", serif;
@@ -231,4 +233,62 @@ h4{
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 4px;
+}
+.oeil{
+    position: absolute;
+    top: 468px;
+    right: 510px;
+    z-index: 2;
+    font-size: 16px;
+    cursor: pointer;
+}
+.oeil.actives::before{
+    content: '\f070';
+    color: #aeaeae;
+}
+#message{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: #181818;
+    width: 100%;
+    position: relative;
+    display: none;
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 10px;
+    animation: anime 0.5s ease-out;
+}
+@keyframes anime {
+    from{
+        transform: translateY(100px);
+    }
+}
+#message h5{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#message p{
+    margin-left: 8px;
+    padding: 6px 0px;
+    font-size: 14px;
+}
+.invalid{
+    color: red !important; 
+}
+.invalid::before{
+    position: relative;
+    left: -7px;
+    color: red !important; 
+    content: "✕";
+}
+.valid{
+    color: green !important;
+}
+.valid::before{
+    position: relative;
+    left: -7px;
+    color: green !important; 
+    content: "✓";
 }
