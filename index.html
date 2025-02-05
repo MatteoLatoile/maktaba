@@ -14,7 +14,7 @@
 
 <body>
 
-    <header class="flex alignItem spaceBetween">
+    <header data-aos="fade-down" data-aos-delay="700" class="flex alignItem spaceBetween">
         <img src="assets/6499731.png" alt="" id="openBtn" class="burgerPasOuf">
         <img src="assets/logo maison sousou.png" class="logoHeader width30" alt="">
         <div class="flex alignItem">
@@ -53,7 +53,7 @@
     </header>
 
     <section class="column flex alignItem">
-        <h2>مكتبة</h2>
+        <h2 data-aos="fade-up" data-aos-delay="300">مكتبة</h2>
         <spline-viewer url="https://prod.spline.design/0pxLoeb2LGlJVefj/scene.splinecode"
             class="splineHeight"></spline-viewer>
         <h1 class="LeftToRight">Lorem ipsum dolor sit amet consectetur adipisicing elit. A exercitationem labore
@@ -132,9 +132,12 @@
             </div>
         </div>
     </section>
-
     <script src="app.js" defer></script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.59/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
