@@ -25,6 +25,7 @@ input.onblur = function(){
 
 input.onkeyup = function(){
     //valider les lettre minuscule
+    
     let lowerCaseLetters = /[a-z]/g
     if(input.value.match(lowerCaseLetters)){
         minuscule.classList.remove('invalid');
