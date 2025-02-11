@@ -4,6 +4,7 @@ let minuscule = document.querySelector('#minuscule');
 let majuscule = document.querySelector('#majuscule');
 let chiffre = document.querySelector('#chiffre');
 let lenght = document.querySelector('#lenght');
+let creer = document.getElementById('creer');
 
 showBtn.onclick = function(){
     if(input.type === "password"){
@@ -60,5 +61,14 @@ input.onkeyup = function(){
     }else{
         lenght.classList.remove('valid');
         lenght.classList.add('invalid');
+    }
+}
+
+creer.addEventListener("click", verif)
+function verif (){
+    if(minuscule.classList.match('valid')){
+        console.log('oui ca marche')
+    }else{
+        console.log('non ca marche pas')
     }
 }

@@ -244,3 +244,20 @@ h4{
     content: '\f070';
     color: #aeaeae;
 }
+.checkbox{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.checkbox input{
+    width: 50% !important;
+    
+    margin: 0px !important;
+    padding: 0px !important; 
+}
+.checkbox label{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    margin-right: 10px;
+}
